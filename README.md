@@ -26,6 +26,13 @@ Angular website rebuild inspired by https://neuwdenim.com/us/
 | Customer wants to change amount of columns that display products | click button | grid layout changes |
 | Customer wants cart functionality | click add to cart | cart updates |
 
+## Angular Site Structure
+
+| Model | View | Component |
+| - | - | - |
+| SaleItem {<br>price: number,<br>imgMain: string,<br>imgAlt: string,<br>productType: string,<br>inStock: boolean<br>} | Sale Page<br>Product Page | display-sale-items |
+
+
 ## Setup/Installation Requirements
 * To view project code, clone repository from https://github.com/william-chu/epicodus-week8-9/
 * Install Node.js https://nodejs.org/en/
