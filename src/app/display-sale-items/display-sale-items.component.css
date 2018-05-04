@@ -39,6 +39,15 @@
   font-size: 14px;
 }
 
+.sale-display-body h3 {
+  color: red;
+  font-size: 100%;
+  font-weight: bold;
+  margin-top: -100%;
+  text-align: center;
+  transform: rotate(40deg);
+}
+
 .out-of-stock {
   opacity: .3;
 }
