@@ -4,13 +4,14 @@
   margin: 50px 0;
 }
 
-.item-display {
-  display: inline-block;
-  margin: auto;
+.sale-display-header select {
+  margin: 50px 50px;
 }
 
 .item-display img {
-  width: 300px;
+  display: block;
+  margin: auto;
+  width: 90%;
 }
 
 .item-display p {
