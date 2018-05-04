@@ -4,10 +4,24 @@
 
 ## Description
 
-## Specifications
+Angular website rebuild inspired by https://neuwdenim.com/us/
 
-| Specification | Input | Output |
-| --- | --- | --- |
+## User Stories
+
+| Basic Features | Input | Output |
+| Customer wants to see a page of clothing items for sale | load page | sale items show in grid layout |
+| Customer wants to see alternate views of products on hover | hover over sale item | image changes |
+| Customer wants to filter by product type | select filter | sale item grid updates |
+
+| Advanced Features | Input | Output |
+| Customer wants visual cue for items that are out of stock | load page | sale items show out of stock|
+| Customer wants to be able to use nav bar to view sales page | click on sales category | route to sale page |
+| Customer wants to be able to drill down into sales item details | click on sale item | route to item page |
+
+| Wishlist Features | Input | Output |
+| Customer wants to see landing page when accessing site | load page | landing page loads |
+| Customer wants to change amount of columns that display products | click button | grid layout changes |
+| Customer wants cart functionality | click add to cart | cart updates |
 
 ## Setup/Installation Requirements
 * To view project code, clone repository from https://github.com/william-chu/epicodus-week8-9/
