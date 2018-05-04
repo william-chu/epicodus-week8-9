@@ -11,7 +11,9 @@
 
 ## Setup/Installation Requirements
 * To view project code, clone repository from https://github.com/william-chu/epicodus-week8-9/
-* Install Node.js
+* Install Node.js https://nodejs.org/en/
+* Install Node TypeScript package, open terminal and run `npm install typescript -g`
+* (Optional for Atom users) Install Atom TypeScript package, open terminal and run `apm install atom-typescript`
 * Open terminal, navigate to project root folder and run `npm install`
 * To view project in development mode, navigate to project root folder and run `ng serve --open`
 
