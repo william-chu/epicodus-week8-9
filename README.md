@@ -1,4 +1,36 @@
-# EpicodusWeek8
+# Epicodus Week 8-9
+
+#### By William Chu
+
+## Description
+
+## Specifications
+
+| Specification | Input | Output |
+| --- | --- | --- |
+
+## Setup/Installation Requirements
+* To view project code, _clone repository from_ https://github.com/william-chu/epicodus-week8-9/
+* Install Node.js
+* Open terminal, navigate to project root folder and run npm install
+* To view project in development mode, navigate to project root folder and run ng serve --open
+
+## Known Bugs
+
+## Technologies Used
+
+* CSS _(Bootstrap 4.1)_
+* JavaScript
+* TypeScript
+* Angular
+* Node.js
+
+
+## License
+
+* GPL
+
+William Chu © 2018
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
