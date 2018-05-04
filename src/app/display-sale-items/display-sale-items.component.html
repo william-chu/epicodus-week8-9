@@ -17,10 +17,11 @@
 </div>
 <div class="sale-display-body row">
   <div class="col-4" *ngFor="let saleItem of childSaleItems | filterProduct:filterSaleItems ">
-    <div class="item-display">
-      <img [src]="saleItem.imgMain">
+    <div [class]="outOfStock(saleItem)">
+      <img [src]="saleItem.imgMain" >
       <p>{{saleItem.name}}</p>
       <p>$USD {{saleItem.price}}</p>
     </div>
   </div>
 </div>
+<p class="text-center">1 2 3 4 5 ></p>

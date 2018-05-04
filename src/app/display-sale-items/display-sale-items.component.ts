@@ -9,6 +9,14 @@ import { SaleItem } from './../models/saleitem.model';
 export class DisplaySaleItemsComponent {
   @Input() childSaleItems: SaleItem[];
 
+  outOfStock(saleItem) {
+    if (saleItem.inventory === 0) {
+      return 'item-display out-of-stock';
+    } else {
+      return 'item-display'
+    }
+  }
+
   filterSaleItems: string ="all";
   onChange(filterBy) {
     this.filterSaleItems = filterBy;

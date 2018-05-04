@@ -1,16 +1,21 @@
+.sale-display-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .sale-display-header h4 {
   font-weight: bold;
   text-align: center;
-  margin: 40px 0;
+  margin: -10px 0;
 }
 
 .sale-display-header select {
-  margin: 50px 0px 50px 75px;
+  margin-left: 75px;
 }
 
 .sale-display-header p {
   text-align: right;
-  margin: 50px 75px 50px 0;
+  margin-right:75px;
 }
 
 .sale-display-body {
@@ -19,6 +24,7 @@
 
 .item-display {
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .item-display img {
@@ -30,4 +36,9 @@
 .item-display p {
   font-weight: bold;
   text-align: center;
+  font-size: 14px;
+}
+
+.out-of-stock {
+  opacity: .3;
 }
