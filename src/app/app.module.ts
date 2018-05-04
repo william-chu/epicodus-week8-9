@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { DisplaySaleItemsComponent } from './display-sale-items/display-sale-items.component';
+import { DisplayNavbarComponent } from './display-navbar/display-navbar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DisplaySaleItemsComponent,
+    DisplayNavbarComponent
   ],
   imports: [
     BrowserModule

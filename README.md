@@ -30,7 +30,7 @@ Angular website rebuild inspired by https://neuwdenim.com/us/
 
 | Model | View | Component |
 | - | - | - |
-| SaleItem {<br>price: number,<br>imgMain: string,<br>imgAlt: string,<br>productType: string,<br>inStock: boolean<br>} | Sale Page<br>Product Page | display-sale-items |
+| SaleItem {<br>price: number,<br>imgMain: string,<br>imgAlt: string,<br>productType: string,<br>inStock: boolean<br>} | Sale Page<br>Product Page | display-sale-items<br>display-navbar |
 
 
 ## Setup/Installation Requirements
