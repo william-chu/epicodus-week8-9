@@ -21,4 +21,11 @@ export class DisplaySaleItemsComponent {
   onChange(filterBy) {
     this.filterSaleItems = filterBy;
   }
+
+  mouseOut(saleItem) {
+    let imgMainURL = '"this.src=\'' + saleItem.imgMain + '\'"';
+    let imgMainURL2 = "\'" + saleItem.imgMain + "\'";
+    alert(imgMainURL2);
+    return imgMainURL2;
+  }
 }
