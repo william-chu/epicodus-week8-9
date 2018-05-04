@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { DisplaySaleItemsComponent } from './display-sale-items/display-sale-items.component';
 import { DisplayNavbarComponent } from './display-navbar/display-navbar.component';
 
+import { FilterProductPipe } from './filterproduct.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplaySaleItemsComponent,
-    DisplayNavbarComponent
+    DisplayNavbarComponent,
+    FilterProductPipe
   ],
   imports: [
     BrowserModule
