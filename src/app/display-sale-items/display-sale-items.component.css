@@ -1,17 +1,30 @@
 .sale-display-header h4 {
   font-weight: bold;
   text-align: center;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .sale-display-header select {
-  margin: 50px 50px;
+  margin: 50px 0px 50px 75px;
+}
+
+.sale-display-header p {
+  text-align: right;
+  margin: 50px 75px 50px 0;
+}
+
+.sale-display-body {
+  margin: 0 10%;
+}
+
+.item-display {
+  margin-bottom: 20px;
 }
 
 .item-display img {
   display: block;
-  margin: auto;
-  width: 90%;
+  margin: 0 auto 20px auto;
+  width: 80%;
 }
 
 .item-display p {
