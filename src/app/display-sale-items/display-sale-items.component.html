@@ -1,3 +1,7 @@
-<p>
-  display-sale-items works!
-</p>
+<div *ngFor="let saleItem of childSaleItems">
+  <div class="sale-item-display">
+    <img [src]="saleItem.imgMain">
+    <p>{{saleItem.name}}</p>
+    <p>$USD {{saleItem.price}}</p>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+img {
+  display: block;
+  width: 300px;
+  margin: auto;
+}
+
+p {
+  font-weight: bold;
+  text-align: center;
+}
