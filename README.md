@@ -10,10 +10,10 @@
 | --- | --- | --- |
 
 ## Setup/Installation Requirements
-* To view project code, _clone repository from_ https://github.com/william-chu/epicodus-week8-9/
+* To view project code, clone repository from https://github.com/william-chu/epicodus-week8-9/
 * Install Node.js
-* Open terminal, navigate to project root folder and run npm install
-* To view project in development mode, navigate to project root folder and run ng serve --open
+* Open terminal, navigate to project root folder and run `npm install`
+* To view project in development mode, navigate to project root folder and run `ng serve --open`
 
 ## Known Bugs
 
