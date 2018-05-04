@@ -1,9 +1,22 @@
 <div class="container">
   <div class="sale-display-header">
-  <h4>MENS</h4>
+    <div class="row">
+      <div>
+        <select (change)="onChange($event.target.value)">
+          <option value="all" selected="selected">ALL</option>
+          <option value="jacket">JACKETS</option>
+          <option value="pant">PANTS</option>
+          <option value="tee">TEES</option>
+          <option value="under100">UNDER $100</option>
+        </select>
+      </div>
+      <div class="col">
+        <h4>MENS</h4>
+      </div>
+    </div>
   </div>
   <div class="row">
-    <div *ngFor="let saleItem of childSaleItems">
+    <div *ngFor="let saleItem of childSaleItems | filterproduct">
       <div class="item-display .col-4">
         <img [src]="saleItem.imgMain">
         <p>{{saleItem.name}}</p>

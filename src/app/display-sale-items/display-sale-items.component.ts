@@ -9,4 +9,9 @@ import { SaleItem } from './../models/saleitem.model';
 export class DisplaySaleItemsComponent {
   @Input() childSaleItems: SaleItem[];
 
+  filterSaleItems: string ="all";
+
+  onChange(filterBy) {
+    this.filterSaleItems= filterBy;
+  }
 }
