@@ -10,8 +10,7 @@ export class DisplaySaleItemsComponent {
   @Input() childSaleItems: SaleItem[];
 
   filterSaleItems: string ="all";
-
   onChange(filterBy) {
-    this.filterSaleItems= filterBy;
+    this.filterSaleItems = filterBy;
   }
 }

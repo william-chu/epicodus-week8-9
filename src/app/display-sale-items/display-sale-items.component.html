@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="row">
-    <div *ngFor="let saleItem of childSaleItems | filterproduct">
+    <div *ngFor="let saleItem of childSaleItems | filterProduct:filterSaleItems ">
       <div class="item-display .col-4">
         <img [src]="saleItem.imgMain">
         <p>{{saleItem.name}}</p>
