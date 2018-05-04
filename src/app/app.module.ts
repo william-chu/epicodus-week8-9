@@ -7,13 +7,15 @@ import { DisplaySaleItemsComponent } from './display-sale-items/display-sale-ite
 import { DisplayNavbarComponent } from './display-navbar/display-navbar.component';
 
 import { FilterProductPipe } from './filterproduct.pipe';
+import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplaySaleItemsComponent,
     DisplayNavbarComponent,
-    FilterProductPipe
+    FilterProductPipe,
+    AddToCartComponent
   ],
   imports: [
     BrowserModule
