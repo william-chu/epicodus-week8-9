@@ -1,0 +1,48 @@
+.sale-display-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sale-display-header h4 {
+  font-weight: bold;
+  text-align: center;
+  margin: -10px 0;
+}
+
+.sale-display-header select {
+  margin-left: 75px;
+}
+
+.sale-display-header p {
+  text-align: right;
+  padding-right:75px;
+}
+
+.sale-display-body {
+  margin: 0 10%;
+}
+
+.item-display {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.item-display img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 80%;
+}
+
+.item-display p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+.warning {
+  color: crimson;
+}
+
+.out-of-stock {
+  opacity: .4;
+}
