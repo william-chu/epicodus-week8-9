@@ -9,6 +9,9 @@ import { SaleItem } from './../models/saleitem.model';
   styleUrls: ['./mens-sale.component.css']
 })
 export class MensSaleComponent {
+
+  constructor(private router: Router) {}
+
   saleItems: SaleItem[] = [
     new SaleItem(30796, 159, "LOU SLIM - RAW SELVEDGE", "https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/lou_slim_pant_main.jpg", "https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/lou_slim_pant_alt.jpg", "pant", 1),
     new SaleItem(32284, 149,"IGGY SKINNY - PERFECTO", "https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/iggy_skinny_pant_main.jpg", "https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/iggy_skinny_pant_alt.jpg", "pant", 0),
@@ -18,9 +21,9 @@ export class MensSaleComponent {
     new SaleItem(32769, 649,"RIDER JACKET - BLACK LEATHER", "https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/rider_jacket_main.jpg", "https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/rider_jacket_alt.jpg", "jacket", 1),
   ];
 
-  filterSaleItems: string ="all";
-  onChange(filterBy) {
-    this.filterSaleItems = filterBy;
+  filterParameter: string ="all";
+  setFilterParameter(filterBy) {
+    this.filterParameter = filterBy;
   }
 
   outOfStock(saleItem) {
@@ -29,15 +32,15 @@ export class MensSaleComponent {
     }
   }
 
-  mouseOut(saleItem) {
-    saleItem.displayImage = saleItem.imgMain;
-  }
-
   mouseOver(saleItem) {
     saleItem.displayImage = saleItem.imgAlt;
   }
 
+  mouseOut(saleItem) {
+    saleItem.displayImage = saleItem.imgMain;
+  }
+
   goToSaleItemDetail(clickedSaleItem: SaleItem) {
-    this.router.navigate(['saleItems'], clickedSaleItem.productId]);
+    this.router.navigate(['mens-sale', clickedSaleItem.productId]);
   }
 }

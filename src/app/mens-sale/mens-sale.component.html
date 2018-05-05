@@ -1,6 +1,6 @@
 <div class="sale-display-header row">
   <div class="col-sm">
-    <select (change)="onChange($event.target.value)">
+    <select (change)="setFilterParameter($event.target.value)">
       <option value="all" selected="selected">ALL</option>
       <option value="jacket">JACKETS</option>
       <option value="pant">PANTS</option>
@@ -16,7 +16,7 @@
   </div>
 </div>
 <div class="sale-display-body row">
-  <div class="item-display col-4" *ngFor="let saleItem of saleItems | filterProduct:filterSaleItems" (click)="goToSaleItemDetail()">
+  <div class="item-display col-4" *ngFor="let saleItem of saleItems | filterProduct:filterParameter" (click)="goToSaleItemDetail(saleItem)">
     <div [class]="outOfStock(saleItem)">
       <img [src]="saleItem.displayImage" (mouseover)="mouseOver(saleItem)"
       (mouseout)="mouseOut(saleItem)">

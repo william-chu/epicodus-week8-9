@@ -15,7 +15,7 @@ const appRoutes: Routes = [
     component: MensSaleComponent
   },
   {
-    path: 'sale-item-detail/:id',
+    path: 'mens-sale/:productId',
     component: SaleItemDetailComponent
   },
   {
