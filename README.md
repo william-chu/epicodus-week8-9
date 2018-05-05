@@ -1,10 +1,10 @@
-# Epicodus Week 8-9
+# Site Rebuild
 
 #### By William Chu
 
 ## Description
 
-Website rebuild project inspired by Neuw Denim https://neuwdenim.com/us/
+A website rebuild using Angular inspired by Neuw Denim https://neuwdenim.com/us/
 
 Screenshot of Actual Site (5/4/18)
 ![Neuw Denim Website](https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/NeuwDenimSite.png)
@@ -37,6 +37,7 @@ Screenshot of Actual Site (5/4/18)
 
 
 ## Setup/Installation Requirements
+* To view project, view in browser https://william-chu.github.io/epicodus-week8-9/
 * To view project code, clone repository from https://github.com/william-chu/epicodus-week8-9/
 * Install Node.js https://nodejs.org/en/
 * Install Node Angular Cli package, open terminal and run `npm install -g @angular/cli` https://cli.angular.io/
