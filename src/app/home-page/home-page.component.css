@@ -6,3 +6,10 @@ img {
   background-color: black;
   width: 100%;
 }
+
+.footer img {
+  display: block;
+  margin: auto;
+  padding: 25px 0;
+  width: 100px;
+}
