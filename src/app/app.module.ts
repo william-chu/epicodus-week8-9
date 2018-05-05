@@ -10,6 +10,7 @@ import { FilterProductPipe } from './filterproduct.pipe';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { MensSaleComponent } from './mens-sale/mens-sale.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { InfoComponent } from './info/info.component';
 import { routing } from './app.routing';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { routing } from './app.routing';
     FilterProductPipe,
     AddToCartComponent,
     MensSaleComponent,
-    HomePageComponent
+    HomePageComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
