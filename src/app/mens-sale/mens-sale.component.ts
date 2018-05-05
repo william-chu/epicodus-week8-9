@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SaleItemInventoryService } from './../sale-item-inventory.service';
 import { SaleItem } from './../models/saleitem.model';
@@ -10,11 +10,14 @@ import { SaleItem } from './../models/saleitem.model';
   styleUrls: ['./mens-sale.component.css'],
   providers: [SaleItemInventoryService]
 })
-export class MensSaleComponent {
-
+export class MensSaleComponent implements OnInit {
   constructor(private router: Router, private saleItemInventoryService: SaleItemInventoryService) {}
 
   saleItems: SaleItem[];
+
+  ngOnInit() {
+    this.saleItems = this.saleItemInventoryService.getSaleItemInventory();
+  }
 
   filterParameter: string ="all";
   setFilterParameter(filterBy) {
