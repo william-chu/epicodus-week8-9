@@ -14,3 +14,8 @@ img {
 .nav-item a {
   font-size: 14px;
 }
+
+#navbarNavDropdown {
+  padding-top: 10px;
+  padding-left: 50px;
+}
