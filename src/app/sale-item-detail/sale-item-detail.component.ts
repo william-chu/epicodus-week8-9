@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Router } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+import { SaleItem } from './../models/saleitem.model';
 
 @Component({
   selector: 'app-sale-item-detail',
@@ -8,8 +9,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./sale-item-detail.component.css']
 })
 export class SaleItemDetailComponent implements OnInit {
+  productId: number = null;
+
+  constructor(private route: ActivatedRoute, private location: Location) {}
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.productId = parseInt(urlParameters['productId']);
+    });
+
   }
 
 }
