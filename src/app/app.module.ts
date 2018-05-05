@@ -8,6 +8,9 @@ import { DisplayNavbarComponent } from './display-navbar/display-navbar.componen
 
 import { FilterProductPipe } from './filterproduct.pipe';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
+import { MensSaleComponent } from './mens-sale/mens-sale.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -15,10 +18,13 @@ import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
     DisplaySaleItemsComponent,
     DisplayNavbarComponent,
     FilterProductPipe,
-    AddToCartComponent
+    AddToCartComponent,
+    MensSaleComponent,
+    HomePageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
