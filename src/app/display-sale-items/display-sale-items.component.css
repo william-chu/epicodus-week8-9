@@ -10,12 +10,12 @@
 }
 
 .sale-display-header select {
-  margin-left: 75px;
+  padding-left: 75px;
 }
 
 .sale-display-header p {
   text-align: right;
-  margin-right:75px;
+  padding-right:75px;
 }
 
 .sale-display-body {
