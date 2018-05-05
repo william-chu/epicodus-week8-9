@@ -23,9 +23,9 @@ export class DisplaySaleItemsComponent {
   }
 
   mouseOut(saleItem) {
-    let imgMainURL = '\"this.src=\'' + saleItem.imgMain + '\'\"';
-    let imgMainURL2 = "\'" + saleItem.imgMain + "\'";
-    console.log(imgMainURL);
-    return imgMainURL;
+    saleItem.displayImage = saleItem.imgMain;
+  }
+  mouseOver(saleItem) {
+    saleItem.displayImage = saleItem.imgAlt;
   }
 }

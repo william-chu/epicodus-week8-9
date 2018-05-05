@@ -18,12 +18,8 @@
 <div class="sale-display-body row">
   <div class="col-4" *ngFor="let saleItem of childSaleItems | filterProduct:filterSaleItems ">
     <div [class]="outOfStock(saleItem)">
-      <!-- <img [src]="saleItem.imgMain" onmouseover="this.src='https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/unity_tee_alt.jpg'"
-(mouseout)="this.src=mouseOut(saleItem)"> -->
-
-      <img [src]="saleItem.imgMain" (mouseover)='this.src="https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/unity_tee_alt.jpg"'
-      (mouseout)='mouseOut(saleItem)'>
-
+      <img [src]="saleItem.displayImage" (mouseover)="mouseOver(saleItem)"
+      (mouseout)="mouseOut(saleItem)">
       <p>{{saleItem.name}}</p>
       <p>$USD {{saleItem.price}}</p>
     </div>

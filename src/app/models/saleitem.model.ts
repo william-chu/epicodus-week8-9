@@ -1,5 +1,6 @@
 export class SaleItem {
   inStock = this.checkInstock();
+  displayImage = this.imgMain;
   constructor(public price: number, public name: string, public imgMain: string, public imgAlt: string, public productType: string, public inventory: number) {}
 
   checkInstock() {
