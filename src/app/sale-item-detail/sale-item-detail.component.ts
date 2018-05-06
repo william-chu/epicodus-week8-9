@@ -27,4 +27,10 @@ export class SaleItemDetailComponent implements OnInit {
     this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemByProductId(this.productId);
   }
 
+  outOfStock(saleItem) {
+    if (this.saleItemToDisplay.inventory === 0) {
+      return 'out-of-stock';
+    }
+  }
+
 }

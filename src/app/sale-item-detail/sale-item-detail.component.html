@@ -1,12 +1,15 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6">
-      <img [src]="saleItemToDisplay.imgMain">
+      <div [class]="outOfStock(saleItemToDisplay)">
+        <img [src]="saleItemToDisplay.imgMain">
+      </div>
     </div>
     <div class="col-md-6 item-detail">
       <h3>{{saleItemToDisplay.name}}</h3>
       <p>{{saleItemToDisplay.productId}}</p>
-      <p><strong>$USD {{saleItemToDisplay.price}}</strong></p>
+      <strong><p *ngIf="saleItemToDisplay.inStock">$USD {{saleItemToDisplay.price}}</p></strong>
+      <strong><p class="warning" *ngIf="!saleItemToDisplay.inStock">OUT OF STOCK</p></strong>
       <p>{{saleItemToDisplay.description}}</p>
     </div>
   </div>
