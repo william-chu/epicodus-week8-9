@@ -11,6 +11,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { MensSaleComponent } from './mens-sale/mens-sale.component';
 import { SaleItemDetailComponent } from './sale-item-detail/sale-item-detail.component';
 import { InfoComponent } from './info/info.component';
+import { BrandPageComponent } from './brand-page/brand-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { InfoComponent } from './info/info.component';
     MensSaleComponent,
     HomePageComponent,
     InfoComponent,
-    SaleItemDetailComponent
+    SaleItemDetailComponent,
+    BrandPageComponent
   ],
   imports: [
     BrowserModule,
