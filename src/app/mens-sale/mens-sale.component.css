@@ -16,6 +16,10 @@
   padding: 3px;
 }
 
+.sale-display-header select {
+  outline: none;
+}
+
 .sale-display-header p {
   text-align: right;
   padding-right:75px;
