@@ -1,7 +1,10 @@
 <div class="container">
-  <h1 class="text-center">FITS</h1>
-  <p class="text-center">HOVER FOR DETAILS</p>
-  <br>
+  <div class="row">
+    <div class="col">
+      <h1 class="text-center">FITS</h1>
+      <p class="text-center">HOVER FOR DETAILS</p>
+    </div>
+  </div>
   <div class="row">
     <div class="col-4 jean-fit" *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'male'">
       <img [src]="jeanFit.imgMain">
