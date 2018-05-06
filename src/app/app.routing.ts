@@ -27,7 +27,7 @@ const appRoutes: Routes = [
   {
     path: 'fit',
     component: FitPageComponent
-  }
+  },
   {
     path: 'info',
     component: InfoComponent

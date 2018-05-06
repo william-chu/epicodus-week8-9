@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { FilterProductPipe } from './filterproduct.pipe';
+import { FilterJeanFitGenderPipe } from './filterjeanfitgender.pipe';
 import { routing } from './app.routing';
 
 import { DisplayNavbarComponent } from './display-navbar/display-navbar.component';
@@ -19,12 +19,13 @@ import { FitPageComponent } from './fit-page/fit-page.component';
     AppComponent,
     DisplayNavbarComponent,
     FilterProductPipe,
+    FilterJeanFitGenderPipe,
     MensSaleComponent,
     HomePageComponent,
     InfoComponent,
     SaleItemDetailComponent,
     BrandPageComponent,
-    FitPageComponent
+    FitPageComponent,
   ],
   imports: [
     BrowserModule,

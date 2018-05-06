@@ -1,9 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { SaleItem } from './models/saleitem.model';
 import { JeanFit } from './models/jeanfit.model';
 
 @Pipe({
-  name: "filterGender",
+  name: "filterJeanFitGender",
   pure: false
 })
 
