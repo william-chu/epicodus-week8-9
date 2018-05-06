@@ -2,7 +2,7 @@ import { TestBed, inject } from '@angular/core/testing';
 
 import { SaleItemInventoryService } from './sale-item-inventory.service';
 
-describe('SaleItemInventoryService', () => {
+describe('SaleItemMensInventoryService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [SaleItemInventoryService]

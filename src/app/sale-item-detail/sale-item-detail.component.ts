@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { SaleItem } from './../models/saleitem.model';
-import { SaleItemInventoryService } from './../sale-item-mens-inventory.service';
+import { SaleItemInventoryService } from './../sale-item-inventory.service';
 
 @Component({
   selector: 'app-sale-item-detail',
