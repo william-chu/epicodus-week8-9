@@ -2,14 +2,67 @@ h1 {
   margin-top: 50px;
 }
 
-img {
-  display: block;
-  margin:auto;
-  width: 50%;
-  min-width: 300px;
-  position: relative;
-}
-
 .mirror {
   transform: scaleX(-1);
+}
+
+.jean-fit {
+  display: block;
+  margin: 0 auto 25px auto;
+  position: relative;
+  width: 50%;
+}
+
+.jean-fit img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.overlay-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlay-right {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.jean-fit:hover .overlay-left {
+  width: 100%;
+  right: 0;
+}
+
+.jean-fit:hover .overlay-right {
+  width: 100%;
+  left: 0;
+}
+
+.jean-fit h3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 50px 20px 20px 20px;
+}
+
+.jean-fit p {
+  color: white;
+  font-size: 16px;
+  padding: 0px 20px;
 }
