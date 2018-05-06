@@ -2,6 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { MensSaleComponent } from './mens-sale/mens-sale.component';
+import { WomensSaleComponent } from './womens-sale/womens-sale.component';
 import { SaleItemDetailComponent } from './sale-item-detail/sale-item-detail.component';
 import { BrandPageComponent } from './brand-page/brand-page.component';
 import { FitPageComponent } from './fit-page/fit-page.component';
@@ -19,6 +20,10 @@ const appRoutes: Routes = [
   {
     path: 'mens-sale/:productId',
     component: SaleItemDetailComponent
+  },
+  {
+    path: 'womens-sale',
+    component: WomensSaleComponent
   },
   {
     path: 'brand',

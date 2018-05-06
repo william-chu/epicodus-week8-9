@@ -1,3 +1,31 @@
-<p>
-  womens-sale works!
-</p>
+<div class="container">
+  <div class="sale-display-header row">
+    <div class="col-4">
+      <select (change)="setFilterParameter($event.target.value)">
+        <option value="all" selected="selected">ALL</option>
+        <option value="jacket">JACKETS</option>
+        <option value="pant">PANTS</option>
+        <option value="tee">TEES</option>
+        <option value="under100">UNDER $100</option>
+      </select>
+    </div>
+    <div class="col-4">
+      <h4>MENS</h4>
+    </div>
+    <div class="col-4">
+      <p class="page-tracker"><strong>1</strong> 2 3 4 5 ></p>
+    </div>
+  </div>
+  <div class="sale-display-body row">
+    <div class="item-display col-4" *ngFor="let saleItem of saleItems | filterProduct:filterParameter" (click)="goToSaleItemDetail(saleItem)">
+      <div [class]="outOfStock(saleItem)">
+        <img [src]="saleItem.displayImage" (mouseover)="mouseOver(saleItem)"
+        (mouseout)="mouseOut(saleItem)">
+      </div>
+      <p>{{saleItem.name}}</p>
+      <p *ngIf="saleItem.inStock">$USD {{saleItem.price}}</p>
+      <p class="warning" *ngIf="!saleItem.inStock">OUT OF STOCK</p>
+    </div>
+  </div>
+  <p class="text-center page-tracker"><strong>1</strong> 2 3 4 5 ></p>
+</div>
