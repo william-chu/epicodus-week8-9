@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SaleItemInventoryService } from './../sale-item-inventory.service';
+import { SaleItemInventoryService } from './../sale-item-mens-inventory.service';
 import { SaleItem } from './../models/saleitem.model';
 
 
@@ -16,7 +16,7 @@ export class MensSaleComponent implements OnInit {
   saleItems: SaleItem[];
 
   ngOnInit() {
-    this.saleItems = this.saleItemInventoryService.getSaleItemInventory();
+    this.saleItems = this.saleItemInventoryService.getSaleItemInventoryMens();
   }
 
   filterParameter: string ="all";

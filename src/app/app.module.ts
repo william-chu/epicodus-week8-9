@@ -13,6 +13,7 @@ import { SaleItemDetailComponent } from './sale-item-detail/sale-item-detail.com
 import { InfoComponent } from './info/info.component';
 import { BrandPageComponent } from './brand-page/brand-page.component';
 import { FitPageComponent } from './fit-page/fit-page.component';
+import { WomensSaleComponent } from './womens-sale/womens-sale.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FitPageComponent } from './fit-page/fit-page.component';
     SaleItemDetailComponent,
     BrandPageComponent,
     FitPageComponent,
+    WomensSaleComponent,
   ],
   imports: [
     BrowserModule,

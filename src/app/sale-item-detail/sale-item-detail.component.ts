@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { SaleItem } from './../models/saleitem.model';
-import { SaleItemInventoryService } from './../sale-item-inventory.service';
+import { SaleItemInventoryService } from './../sale-item-mens-inventory.service';
 
 @Component({
   selector: 'app-sale-item-detail',
@@ -24,7 +24,7 @@ export class SaleItemDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.productId = parseInt(urlParameters['productId']);
     });
-    this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemByProductId(this.productId);
+    this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemMensByProductId(this.productId);
   }
 
   outOfStock(saleItem) {
