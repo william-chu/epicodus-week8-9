@@ -11,4 +11,12 @@ export class SaleItemInventoryService {
     return SALEITEMS;
   }
 
+  getSaleItemByProductId(saleItemProductId: number) {
+    for (let i = 0; i < SALEITEMS.length; i++) {
+      if(SALEITEMS[i].productId === saleItemProductId) {
+        return SALEITEMS[i];
+      }
+    }
+  }
+
 }

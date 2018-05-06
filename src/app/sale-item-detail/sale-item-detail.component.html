@@ -1,1 +1,13 @@
-<h2>Product ID: {{productId}}</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img [src]="saleItemToDisplay.imgMain">
+    </div>
+    <div class="col-md-6 item-detail">
+      <h3>{{saleItemToDisplay.name}}</h3>
+      <p>{{saleItemToDisplay.productId}}</p>
+      <p><strong>$USD {{saleItemToDisplay.price}}</strong></p>
+      <p>{{saleItemToDisplay.description}}</p>
+    </div>
+  </div>
+</div>
