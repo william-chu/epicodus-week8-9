@@ -2,8 +2,29 @@ img {
   width: 100%;
 }
 
+h5 {
+  color: white;
+  background: linear-gradient(to top, #333333, #232323, #131313);
+  padding: 10px 0;
+  width: 100%;
+}
+
+button {
+  display: block;
+  margin: auto;
+  width: 150px;
+  background: white;
+  color: black;
+  border-radius: 0;
+}
+
+.col-6 img {
+  display: block;
+  margin: auto;
+  width: 300px;
+}
+
 .footer {
-  border-top: 1px solid white;
   background: linear-gradient(to bottom, #333333, #232323, #131313);
   width: 100%;
 }
