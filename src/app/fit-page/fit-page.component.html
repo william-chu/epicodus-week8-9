@@ -1,24 +1,30 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h1 class="text-center">FITS</h1>
-      <p class="text-center">HOVER FOR DETAILS</p>
+      <h1 class="text-center">FIND THE PERFECT FIT</h1>
+      <p class="text-center">TAP FOR DETAILS</p>
     </div>
   </div>
   <div class="row">
-    <div class="col-4 jean-fit" *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'male'">
-      <img [src]="jeanFit.imgMain">
-      <div class="overlay-right">
-        <h3>{{jeanFit.name}}</h3>
-        <p>{{jeanFit.description}}</p>
+    <div class="col-6">
+      <div *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'male'">
+        <div class="jean-fit">
+          <img [src]="jeanFit.imgMain">
+          <div class="overlay-right">
+            <h3>{{jeanFit.name}}</h3>
+            <p>{{jeanFit.description}}</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-4 jean-fit" *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'female'">
-        <img class="mirror" [src]="jeanFit.imgMain">
-        <div class="overlay-left">
-          <h3>{{jeanFit.name}}</h3>
-          <p>{{jeanFit.description}}</p>
+    <div class="col-6">
+      <div *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'female'">
+        <div class="jean-fit">
+          <img class="mirror" [src]="jeanFit.imgMain">
+          <div class="overlay-left">
+            <h3>{{jeanFit.name}}</h3>
+            <p>{{jeanFit.description}}</p>
+          </div>
         </div>
       </div>
     </div>
