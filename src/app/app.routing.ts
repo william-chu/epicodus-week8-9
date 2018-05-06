@@ -5,7 +5,7 @@ import { MensSaleComponent } from './mens-sale/mens-sale.component';
 import { SaleItemDetailComponent } from './sale-item-detail/sale-item-detail.component';
 import { BrandPageComponent } from './brand-page/brand-page.component';
 import { FitPageComponent } from './fit-page/fit-page.component';
-import { InfoComponent } from './info/info.component';
+import { InfoPageComponent } from './info-page/info-page.component';
 
 const appRoutes: Routes = [
   {
@@ -30,7 +30,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'info',
-    component: InfoComponent
+    component: InfoPageComponent
   },
 ];
 
