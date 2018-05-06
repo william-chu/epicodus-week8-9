@@ -1,15 +1,17 @@
 img {
   display: block;
   margin: auto;
-  padding: 100px 20px;
-  width: 400px;
+  padding: 100px 25px;
+  width: 90%;
+  min-width: 450px;
 }
 
 .item-detail {
   display: block;
   margin: auto;
-  max-width: 600px;
-  padding: 100px;
+  max-width: 550px;
+  min-width: 500px;
+  padding: 25px 75px;
 }
 
 .item-detail h3 {
