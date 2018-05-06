@@ -26,6 +26,10 @@ const appRoutes: Routes = [
     component: WomensSaleComponent
   },
   {
+    path: 'womens-sale/:productId',
+    component: SaleItemDetailComponent
+  },
+  {
     path: 'brand',
     component: BrandPageComponent
   },

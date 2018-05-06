@@ -25,6 +25,9 @@ export class SaleItemDetailComponent implements OnInit {
       this.productId = parseInt(urlParameters['productId']);
     });
     this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemMensByProductId(this.productId);
+    if (typeof this.saleItemToDisplay === "undefined") {
+      this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemWomensByProductId(this.productId);
+    }
   }
 
   outOfStock(saleItem) {
