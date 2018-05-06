@@ -1,3 +1,12 @@
 .row {
   margin-top: 50px;
 }
+
+img {
+  padding-top: 80px;
+  width: 100%;
+}
+
+.mirror {
+  transform: scaleX(-1);
+}
