@@ -1,0 +1,7 @@
+img {
+  width: 50%;
+}
+
+.mirror {
+  transform: scaleX(-1);
+}

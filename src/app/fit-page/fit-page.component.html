@@ -3,12 +3,14 @@
     <div class="col-6">
       <div class="jean-fit" *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'male'">
         <img [src]="jeanFit.imgMain">
+        <h5>{{jeanFit.name}}</h5>
         <p>{{jeanFit.description}}</p>
       </div>
     </div>
     <div class="col-6">
       <div class="jean-fit" *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'female'">
-        <img [src]="jeanFit.imgMain">
+        <img class="mirror" [src]="jeanFit.imgMain">
+        <h5>{{jeanFit.name}}</h5>
         <p>{{jeanFit.description}}</p>
       </div>
     </div>
