@@ -1,21 +1,21 @@
+.container-fluid {
+  border-bottom: 1px lightgray solid;
+}
+
 img {
   height: 40px;
-  margin: 3px 50px;
-}
-
-.navbar {
-  border-bottom: 1px gray solid;
-}
-
-.nav-item {
   margin-right: 50px;
 }
 
-.nav-item a {
-  font-size: 14px;
+.nav-item {
+  margin-right: 25px;
+}
+
+.navbar-nav a {
+  font-size: 16px;
+  white-space: nowrap;
 }
 
 #navbarNavDropdown {
   padding-top: 10px;
-  padding-left: 50px;
 }
