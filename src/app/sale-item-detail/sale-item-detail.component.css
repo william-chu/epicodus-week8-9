@@ -3,7 +3,6 @@ img {
   margin: auto;
   padding: 100px 25px;
   width: 90%;
-  min-width: 450px;
 }
 
 .carousel-control-prev-icon {
@@ -25,10 +24,7 @@ img {
 
 .item-detail {
   display: block;
-  margin: auto;
-  max-width: 550px;
-  min-width: 500px;
-  padding: 25px 75px;
+  padding: 100px 75px 0;
 }
 
 .item-detail h3 {

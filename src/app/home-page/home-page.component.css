@@ -12,6 +12,7 @@ h5 {
   padding: 10px 0;
   width: 100%;
 }
+
 a:hover button {
   background: white;
   color:black;
@@ -35,7 +36,7 @@ button {
 .col-6 img {
   display: block;
   margin: auto;
-  width: 300px;
+  width: 75%;
 }
 
 .mirror {
