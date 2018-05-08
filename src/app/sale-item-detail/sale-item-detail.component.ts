@@ -21,10 +21,7 @@ export class SaleItemDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // this.route.params.forEach((urlParameters) => {
-    //   this.productId = parseInt(urlParameters['productId']);
-    // });
-    this.productId = parseInt(this.route.params['_value']['productId']); // Replaces forEach above, more efficient and exact
+    this.productId = parseInt(this.route.params['_value']['productId']);
     this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemMensByProductId(this.productId);
     if (typeof this.saleItemToDisplay === "undefined") {
       this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemWomensByProductId(this.productId);

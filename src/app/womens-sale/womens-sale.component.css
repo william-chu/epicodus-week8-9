@@ -1,18 +1,21 @@
 .sale-display-header {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.sale-display-header-col {
+  padding: 10px;
 }
 
 .sale-display-header h4 {
   font-weight: bold;
   text-align: center;
-  margin: -10px 0;
+  margin: 10px 0;
 }
 
 .sale-display-header select {
-  margin-left: 75px;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 14px;
   padding: 3px;
 }
 
@@ -21,8 +24,7 @@
 }
 
 .sale-display-header p {
-  text-align: right;
-  padding-right:75px;
+
 }
 
 .page-tracker {

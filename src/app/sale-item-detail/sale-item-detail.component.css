@@ -1,7 +1,7 @@
 img {
   display: block;
   margin: auto;
-  padding: 100px 25px;
+  padding: 75px 25px;
   width: 90%;
 }
 
@@ -24,7 +24,7 @@ img {
 
 .item-detail {
   display: block;
-  padding: 100px 75px 0;
+  padding: 75px 75px 0;
 }
 
 .item-detail h3 {

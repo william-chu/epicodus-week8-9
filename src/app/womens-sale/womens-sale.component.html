@@ -1,19 +1,23 @@
 <div class="container">
-  <div class="sale-display-header row">
-    <div class="col-4">
-      <select (change)="setFilterParameter($event.target.value)">
-        <option value="all" selected="selected">ALL</option>
-        <option value="jacket">JACKETS</option>
-        <option value="pant">PANTS</option>
-        <option value="tee">TEES</option>
-        <option value="under100">UNDER $100</option>
-      </select>
+  <div class="sale-display-header">
+    <div class="row">
+      <div class="col">
+        <h4>WOMENS</h4>
+      </div>
     </div>
-    <div class="col-4">
-      <h4>WOMENS</h4>
-    </div>
-    <div class="col-4">
-      <p class="page-tracker"><strong>1</strong> 2 3 4 5 ></p>
+    <div class="row">
+      <div class="col col-md-6 sale-display-header-col">
+        <select (change)="setFilterParameter($event.target.value)">
+          <option value="all" selected="selected">ALL</option>
+          <option value="jacket">JACKETS</option>
+          <option value="pant">PANTS</option>
+          <option value="tee">TEES</option>
+          <option value="under100">UNDER $100</option>
+        </select>
+      </div>
+      <div class="col col-md-6 sale-display-header-col">
+        <p class="page-tracker"><strong>1</strong> 2 3 4 5 ></p>
+      </div>
     </div>
   </div>
   <div class="sale-display-body row">
