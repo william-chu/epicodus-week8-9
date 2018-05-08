@@ -14,7 +14,7 @@
   display: block;
   margin: 0 auto 25px auto;
   position: relative;
-  width: 90%;
+  width: 100%;
 }
 
 .jean-fit img {
@@ -60,13 +60,13 @@
 
 .jean-fit h3 {
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
-  padding: 10px 10px 0;
+  padding: 10px 0 0;
 }
 
 .jean-fit p {
   color: white;
-  font-size: 14px;
-  padding: 0px 10px;
+  font-size: 16px;
+  padding: 0px 25px;
 }
