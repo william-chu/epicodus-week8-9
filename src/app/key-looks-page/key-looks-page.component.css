@@ -1,0 +1,52 @@
+.row {
+  margin-top: 25px;
+}
+
+.key-look {
+  display: block;
+  margin: 0 auto 25px;
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+}
+
+.key-look:hover .overlay {
+  width: 100%;
+}
+
+svg {
+  display: block;
+  height: 30px;
+  margin: 20px auto 0;
+  width: 30px;
+}
+
+.description-text {
+  color: white;
+  font-family: serif;
+  font-size: 18px;
+  font-style: italic;
+  padding: 20px 15px 0;
+  text-align: center;
+}
+
+.date-text {
+  color: white;
+  font-size: 14px;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
