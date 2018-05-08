@@ -17,7 +17,7 @@
   padding-top: 3px;
 }
 
-.button-group button:focus {
+.button-group button:hover, .button-group .button-active {
   box-shadow: none;
   background: white;
   color:black;
@@ -82,13 +82,13 @@
 
 .jean-fit h3 {
   color: white;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
-  padding: 10px 0 0;
+  padding: 15px 0 0;
 }
 
 .jean-fit p {
   color: white;
-  font-size: 16px;
-  padding: 0px 25px;
+  font-size: 18px;
+  padding: 0px 15px;
 }

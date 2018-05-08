@@ -8,9 +8,22 @@ import { JeanFit } from './../models/jeanfit.model';
 })
 export class FitPageComponent implements OnInit {
   viewFitsBy: string = "both";
+  buttonActive: string = "both";
 
   setViewFits(gender) {
     this.viewFitsBy = gender;
+  }
+
+  setButtonActive(gender) {
+    this.buttonActive = gender;
+  }
+
+  checkButtonActive(gender) {
+    if (gender === this.buttonActive) {
+      return 'btn button-active';
+    } else {
+      return 'btn';
+    }
   }
 
   pageLoad() {

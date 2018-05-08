@@ -4,9 +4,9 @@
       <h1 class="text-center">FIND THE PERFECT FIT</h1>
       <p class="text-center">TAP FOR DETAILS</p>
       <div class="button-group">
-        <button type="button" class="btn" (click)="setViewFits('mens')">MENS</button>
-        <button type="button" class="btn" (click)="setViewFits('both')" autofocus>BOTH</button>
-        <button type="button" class="btn" (click)="setViewFits('womens')">WOMENS</button>
+        <button type="button" [class]="checkButtonActive('mens')" (click)="setViewFits('mens'); setButtonActive('mens')">MENS</button>
+        <button type="button" [class]="checkButtonActive('both')" (click)="setViewFits('both'); setButtonActive('both')" autofocus>BOTH</button>
+        <button type="button" [class]="checkButtonActive('womens')" (click)="setViewFits('womens'); setButtonActive('womens')">WOMENS</button>
       </div>
     </div>
   </div>
@@ -54,7 +54,7 @@
       <div class="col-12 col-sm-6" *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'female'">
         <div class="jean-fit">
           <img class="mirror" [src]="jeanFit.imgMain">
-          <div class="overlay-right">
+          <div class="overlay-left">
             <h3>{{jeanFit.name}}</h3>
             <p>{{jeanFit.description}}</p>
           </div>
