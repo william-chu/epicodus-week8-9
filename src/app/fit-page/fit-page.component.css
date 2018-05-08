@@ -2,6 +2,28 @@
   margin-top: 50px;
 }
 
+.button-group {
+  text-align: center;
+}
+
+.button-group button {
+  background: black;
+  border: 2px solid black;
+  border-radius: 0;
+  color: white;
+  font-size: 14px;
+  margin: auto;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.button-group button:focus {
+  box-shadow: none;
+  background: white;
+  color:black;
+  text-decoration: none;
+}
+
 .col-4 {
   padding: 0;
 }

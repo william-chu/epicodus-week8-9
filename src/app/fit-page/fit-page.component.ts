@@ -7,6 +7,16 @@ import { JeanFit } from './../models/jeanfit.model';
   styleUrls: ['./fit-page.component.css']
 })
 export class FitPageComponent implements OnInit {
+  viewFitsBy: string = "both";
+
+  setViewFits(gender) {
+    this.viewFitsBy = gender;
+  }
+
+  pageLoad() {
+    return 'page-load';
+  }
+
   jeanFitList: JeanFit[] = [
     new JeanFit("female", "BOWERY", "Bowery is our mid rise skinny jean and a flattering twist on the standard skinny jean. Pair this jean with a tee and box-fresh trainers or boots for an effortless day-to-day look.", "https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/bowery_fit_women.jpg"),
     new JeanFit("female", "SMITH", "Our classic high skinny jean. Fit as just as tight as on the mid rised Bowery. For you who prefer a higher rise and still like a skinny silhouette.", "https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/smith_fit_women.jpg"),
