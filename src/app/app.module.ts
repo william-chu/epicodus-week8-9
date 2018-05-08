@@ -14,6 +14,7 @@ import { SaleItemDetailComponent } from './sale-item-detail/sale-item-detail.com
 import { BrandPageComponent } from './brand-page/brand-page.component';
 import { FitPageComponent } from './fit-page/fit-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
+import { KeyLooksPageComponent } from './key-looks-page/key-looks-page.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { InfoPageComponent } from './info-page/info-page.component';
     BrandPageComponent,
     FitPageComponent,
     InfoPageComponent,
+    KeyLooksPageComponent,
   ],
   imports: [
     BrowserModule,

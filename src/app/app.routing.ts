@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { MensSaleComponent } from './mens-sale/mens-sale.component';
 import { WomensSaleComponent } from './womens-sale/womens-sale.component';
 import { SaleItemDetailComponent } from './sale-item-detail/sale-item-detail.component';
+import { KeyLooksPageComponent } from './key-looks-page/key-looks-page.component';
 import { BrandPageComponent } from './brand-page/brand-page.component';
 import { FitPageComponent } from './fit-page/fit-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
@@ -28,6 +29,10 @@ const appRoutes: Routes = [
   {
     path: 'womens-sale/:productId',
     component: SaleItemDetailComponent
+  },
+  {
+    path: 'key-looks',
+    component: KeyLooksPageComponent
   },
   {
     path: 'brand',
