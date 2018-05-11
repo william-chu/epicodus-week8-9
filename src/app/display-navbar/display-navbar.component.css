@@ -20,6 +20,10 @@ img {
   white-space: nowrap;
 }
 
+.navbar button:focus {
+  outline: none;
+}
+
 .navbar-toggler {
   margin: 5px 0;
 }
