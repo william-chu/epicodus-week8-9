@@ -1,5 +1,5 @@
 export class SaleItem {
-  displayImage = this.imgMain;
+  imgDisplay = this.imgMain;
   constructor(
     public productId: number,
     public price: number,

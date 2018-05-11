@@ -31,9 +31,9 @@ Screenshot of Actual Site (5/4/18)
 
 ## Angular Site Structure
 
-| Model | View | Component |
+| Model | View | Components |
 | --- | --- | --- |
-| SaleItem {<br>price: number,<br>imgMain: string,<br>imgAlt: string,<br>productType: string,<br>inStock: boolean<br>} | Sale Page<br>Product Page | display-sale-items<br>display-navbar |
+| SaleItem {<br>productId: number,<br>price: number,<br>imgDisplay: string,<br>imgMain: string,<br>imgAlt: string,<br>imgBack: string,<br>productType: string,<br>inventory: number<br>}<br><br>KeyLook {<br>postDate: string,<br>description: string,<br>imgMain: string<br>}<br><br>JeanFit {<br>gender: string,<br>name: string,<br>description: string,<br>imgMain: string<br>} | NavBar (persistent)<br>Landing Page<br>Mens Sale Page<br>Womens Sale Page<br>Sale Item Detail Page(Dynamic Route)<br>Key Looks Page<br>Brand Page<br>Fits Page<br>Info Page | display-navbar<br>home-page<br>mens-sale (sale-item-inventory.service)<br>womens-sale (sale-item-inventory.service)<br>sale-item-detail  (sale-item-inventory.service)<br>key-looks-page<br>brand-page<br>fits-page<br>info-page |
 
 
 ## Setup/Installation Requirements
@@ -71,7 +71,7 @@ Screenshot of Actual Site (5/4/18)
 * Go back to project page in Firebase and click Database under Develop on the left sidebar
 * Go to Realtime Database and click Get Started, toggle Start in test mode and click Enable
 * Click the vertical ellipsis icon to the right of the + - icons and select Import JSON
-* Browse to the project folder src/app/sale-item-inventory.json file and click Import
+* Browse to the project folder src/app/firebase-data.json file and click Import
 * To view project in development mode, navigate to project root folder and run `ng serve --open`
 
 ## Known Bugs

@@ -31,11 +31,11 @@ export class WomensSaleComponent implements OnInit {
   }
 
   mouseOver(saleItem) {
-    saleItem.displayImage = saleItem.imgAlt;
+    saleItem.imgDisplay = saleItem.imgAlt;
   }
 
   mouseOut(saleItem) {
-    saleItem.displayImage = saleItem.imgMain;
+    saleItem.imgDisplay = saleItem.imgMain;
   }
 
   goToSaleItemDetail(clickedSaleItem) {
