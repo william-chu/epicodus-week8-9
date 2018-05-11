@@ -52,7 +52,7 @@ Screenshot of Actual Site (5/4/18)
 * In console view click + Add project
 * Enter project name and country then click Create Project
 * Go to Firebase project page and click Add Firebase to your web app
-* Copy the following section of data from the window that opens =:<br><br>
+* Copy the following section of data from the window that opens:<br><br>
   &nbsp;&nbsp;&nbsp;&nbsp;apiKey: "",<br>
   &nbsp;&nbsp;&nbsp;&nbsp;authDomain: "",<br>
   &nbsp;&nbsp;&nbsp;&nbsp;databaseURL: "",<br>
