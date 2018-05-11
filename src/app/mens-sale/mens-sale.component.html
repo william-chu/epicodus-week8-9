@@ -16,12 +16,16 @@
         </select>
       </div>
       <div class="col col-md-6 sale-display-header-col">
+        <div class="btn-group">
+          <button (click)=setDisplayColumns(3)>...</button>
+          <button (click)=setDisplayColumns(4)>....</button>
+        </div>
         <p class="page-tracker"><strong>1</strong> 2 3 4 5 ></p>
       </div>
     </div>
   </div>
   <div class="sale-display-body row">
-    <div class="item-display col-4" *ngFor="let saleItem of saleItems | async | filterProduct:filterParameter" (click)="goToSaleItemDetail(saleItem)">
+    <div [class]="displayColumns" *ngFor="let saleItem of saleItems | async | filterProduct:filterParameter" (click)="goToSaleItemDetail(saleItem)">
       <div [class]="outOfStock(saleItem)">
         <img [src]="saleItem.imgDisplay" (mouseover)="mouseOver(saleItem)"
         (mouseout)="mouseOut(saleItem)">
