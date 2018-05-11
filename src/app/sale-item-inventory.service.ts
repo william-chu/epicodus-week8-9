@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { SaleItem } from './models/saleitem.model';
-import { SALEITEMSMENS, SALEITEMSWOMENS } from './sale-item-inventory';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
