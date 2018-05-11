@@ -13,6 +13,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 })
 export class SaleItemDetailComponent implements OnInit {
   productId: string;
+  productPath: string;
   saleItemToDisplay;
 
   constructor(
@@ -22,18 +23,13 @@ export class SaleItemDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    console.log(this.route);
-    console.log(this.location);
     this.productId = this.route.params['_value']['productId'];
-    this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemMensByProductId(this.productId);
-    if (typeof this.saleItemToDisplay === "undefined") {
-      this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemWomensByProductId(this.productId);
+    this.productPath = this.route.url['_value'][0]['path'];
+    if (this.productPath === "mens-sale") {
+      this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemMensByProductId(this.productId);
     }
-  }
-
-  outOfStock(saleItem) {
-    if (this.saleItemToDisplay.inventory === 0) {
-      return 'out-of-stock';
+    else if (this.productPath === "womens-sale") {
+      this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemWomensByProductId(this.productId);
     }
   }
 
