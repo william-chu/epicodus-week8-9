@@ -10,13 +10,13 @@
         </ol>
         <div class="carousel-inner">
            <div class="carousel-item active">
-            <img [src]="(saleItemToDisplay| async)?.imgMain">
+            <img [attr.src]="(saleItemToDisplay | async)?.imgMain">
           </div>
           <div class="carousel-item">
-            <img [src]="(saleItemToDisplay| async)?.imgAlt">
+            <img [attr.src]="(saleItemToDisplay | async)?.imgAlt">
           </div>
           <div class="carousel-item">
-            <img [src]="(saleItemToDisplay| async)?.imgBack">
+            <img [attr.src]="(saleItemToDisplay | async)?.imgBack">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
