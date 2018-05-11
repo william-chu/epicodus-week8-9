@@ -15,7 +15,8 @@ export class WomensSaleComponent implements OnInit {
 
   saleItems: FirebaseListObservable<any[]>;
   filterParameter: string = "all";
-  displayColumns = "item-display col-4"
+  displayColumns = "item-display col-4";
+  columnsButtonActive: number = 3;
 
   ngOnInit() {
     this.saleItems = this.saleItemInventoryService.getSaleItemInventoryWomens();
@@ -31,6 +32,18 @@ export class WomensSaleComponent implements OnInit {
     }
     else if (columns === 2) {
       this.displayColumns = "item-display col-6"
+    }
+  }
+
+  setColumnButtonActive(columns) {
+    this.columnsButtonActive = columns;
+  }
+
+  checkColumnButtonActive(columns) {
+    if (columns === this.columnsButtonActive) {
+      return 'button-active';
+    } else {
+      return '';
     }
   }
 

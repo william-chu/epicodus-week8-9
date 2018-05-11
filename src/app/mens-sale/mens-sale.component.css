@@ -39,6 +39,12 @@ button:focus {
   outline: none;
 }
 
+.button-active {
+  border: 1px solid #7f7f7f;
+  background-color: #e5e5e5;
+  color: black;
+}
+
 .page-tracker {
   white-space: nowrap;
 }
