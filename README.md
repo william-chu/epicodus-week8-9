@@ -37,7 +37,7 @@ Screenshot of Actual Site (5/4/18)
 
 
 ## Setup/Installation Requirements
-* To view project, view in browser https://william-chu.github.io/epicodus-week8-9/
+* To view project pre-Firebase implementation, view in browser https://william-chu.github.io/epicodus-week8-9/
 * To view project code, clone repository from https://github.com/william-chu/epicodus-week8-9/ and proceed to Node.js Prerequisites and Firebase Setup
 
 ### Node.js Prerequisites
