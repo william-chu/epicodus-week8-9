@@ -21,7 +21,7 @@
     </div>
   </div>
   <div class="sale-display-body row">
-    <div class="item-display col-4" *ngFor="let saleItem of saleItems | filterProduct:filterParameter" (click)="goToSaleItemDetail(saleItem)">
+    <div class="item-display col-4" *ngFor="let saleItem of saleItems | async | filterProduct:filterParameter" (click)="goToSaleItemDetail(saleItem)">
       <div [class]="outOfStock(saleItem)">
         <img [src]="saleItem.displayImage" (mouseover)="mouseOver(saleItem)"
         (mouseout)="mouseOut(saleItem)">

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SaleItemInventoryService } from './../sale-item-inventory.service';
 import { SaleItem } from './../models/saleitem.model';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-mens-sale',
@@ -13,7 +13,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class MensSaleComponent implements OnInit {
   constructor(private router: Router, private saleItemInventoryService: SaleItemInventoryService) {}
 
-  saleItems: SaleItem[];
+  saleItems: FirebaseListObservable<any[]>;
 
   ngOnInit() {
     this.saleItems = this.saleItemInventoryService.getSaleItemInventoryMens();

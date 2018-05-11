@@ -1,18 +1,24 @@
 import { Injectable } from '@angular/core';
 import { SaleItem } from './models/saleitem.model';
 import { SALEITEMSMENS, SALEITEMSWOMENS } from './sale-item-inventory';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class SaleItemInventoryService {
+  saleItemsMens: FirebaseListObservable<any[]>;
+  saleItemsWomens: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+    this.saleItemsMens = database.list('SALEITEMSMENS');
+    this.saleItemsWomens = database.list('SALEITEMSWOMENS');
+  }
 
   getSaleItemInventoryMens() {
-    return SALEITEMSMENS;
+    return this.saleItemsMens;
   }
 
   getSaleItemInventoryWomens() {
-    return SALEITEMSWOMENS;
+    return this.saleItemsWomens;
   }
 
   getSaleItemMensByProductId(saleItemProductId: number) {
