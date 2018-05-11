@@ -22,6 +22,8 @@ export class SaleItemDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    console.log(this.route);
+    console.log(this.location);
     this.productId = this.route.params['_value']['productId'];
     this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemMensByProductId(this.productId);
     if (typeof this.saleItemToDisplay === "undefined") {

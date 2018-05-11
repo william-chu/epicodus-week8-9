@@ -9,7 +9,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div [class]="outOfStock(saleItemToDisplay)"> <!-- Opacity for OOS Items -->
+          <!-- <div [class]="outOfStock(saleItemToDisplay)"> Opacity for OOS Items -->
             <div class="carousel-item active">
               <img [src]="(saleItemToDisplay| async)?.imgMain">
             </div>
@@ -19,7 +19,7 @@
             <div class="carousel-item">
               <img [src]="(saleItemToDisplay| async)?.imgBack">
             </div>
-          </div>
+          <!-- </div> -->
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
