@@ -21,20 +21,12 @@ export class SaleItemInventoryService {
     return this.saleItemsWomens;
   }
 
-  getSaleItemMensByProductId(saleItemProductId: number) {
-    for (let i = 0; i < SALEITEMSMENS.length; i++) {
-      if(SALEITEMSMENS[i].productId === saleItemProductId) {
-        return SALEITEMSMENS[i];
-      }
-    }
+  getSaleItemMensByProductId(saleItemProductId: string) {
+    return this.database.object('SALEITEMSMENS/' + saleItemProductId);
   }
 
-  getSaleItemWomensByProductId(saleItemProductId: number) {
-    for (let i = 0; i < SALEITEMSWOMENS.length; i++) {
-      if(SALEITEMSWOMENS[i].productId === saleItemProductId) {
-        return SALEITEMSWOMENS[i];
-      }
-    }
+  getSaleItemWomensByProductId(saleItemProductId: string) {
+    return this.database.object('SALEITEMSWOMENS/' + saleItemProductId);
   }
 
 }

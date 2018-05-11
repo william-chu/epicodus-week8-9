@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { SaleItem } from './../models/saleitem.model';
 import { SaleItemInventoryService } from './../sale-item-inventory.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-sale-item-detail',
@@ -11,8 +12,8 @@ import { SaleItemInventoryService } from './../sale-item-inventory.service';
   providers: [SaleItemInventoryService]
 })
 export class SaleItemDetailComponent implements OnInit {
-  productId: number = null;
-  saleItemToDisplay: SaleItem;
+  productId: string;
+  saleItemToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,7 +22,7 @@ export class SaleItemDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.productId = parseInt(this.route.params['_value']['productId']);
+    this.productId = this.route.params['_value']['productId'];
     this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemMensByProductId(this.productId);
     if (typeof this.saleItemToDisplay === "undefined") {
       this.saleItemToDisplay = this.saleItemInventoryService.getSaleItemWomensByProductId(this.productId);

@@ -38,7 +38,7 @@ export class WomensSaleComponent implements OnInit {
     saleItem.displayImage = saleItem.imgMain;
   }
 
-  goToSaleItemDetail(clickedSaleItem: SaleItem) {
-    this.router.navigate(['womens-sale', clickedSaleItem.productId]);
+  goToSaleItemDetail(clickedSaleItem) {
+    this.router.navigate(['womens-sale', clickedSaleItem.$key]);
   }
 }
