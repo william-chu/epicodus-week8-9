@@ -8,8 +8,8 @@ export class SaleItemInventoryService {
   saleItemsWomens: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.saleItemsMens = database.list('SALEITEMSMENS');
-    this.saleItemsWomens = database.list('SALEITEMSWOMENS');
+    this.saleItemsMens = database.list('SaleItemsMens');
+    this.saleItemsWomens = database.list('SaleItemsWomens');
   }
 
   getSaleItemInventoryMens() {
@@ -21,11 +21,11 @@ export class SaleItemInventoryService {
   }
 
   getSaleItemMensByProductId(saleItemProductId: string) {
-    return this.database.object('SALEITEMSMENS/' + saleItemProductId);
+    return this.database.object('SaleItemsMens/' + saleItemProductId);
   }
 
   getSaleItemWomensByProductId(saleItemProductId: string) {
-    return this.database.object('SALEITEMSWOMENS/' + saleItemProductId);
+    return this.database.object('SaleItemsWomens/' + saleItemProductId);
   }
 
 }
