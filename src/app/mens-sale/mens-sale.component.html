@@ -27,8 +27,8 @@
         (mouseout)="mouseOut(saleItem)">
       </div>
       <p>{{saleItem.name}}</p>
-      <p *ngIf="saleItem.inStock">$USD {{saleItem.price}}</p>
-      <p class="warning" *ngIf="!saleItem.inStock">OUT OF STOCK</p>
+      <p *ngIf="saleItem.inventory !== 0">$USD {{saleItem.price}}</p>
+      <p class="warning" *ngIf="saleItem.inventory === 0">OUT OF STOCK</p>
     </div>
   </div>
   <p class="text-center page-tracker"><strong>1</strong> 2 3 4 5 ></p>
