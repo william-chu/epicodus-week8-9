@@ -58,9 +58,8 @@
     "imgBack": "https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/rider_jacket_back.jpg",
     "productType": "jacket",
     "inventory": 1
-  }]
+  }],
 
-  }, {
   "SALEITEMSWOMENS": [{
     "productId": 37837,
     "price": 189,
@@ -121,5 +120,5 @@
     "imgBack": "https://raw.githubusercontent.com/william-chu/epicodus-week8-9/master/src/assets/isabel_jacket_back.jpg",
     "productType": "jacket",
     "inventory": 1
-  }]
+    }]
 }
