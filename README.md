@@ -27,7 +27,7 @@ Screenshot of Actual Site (5/4/18)
 | --- | --- | --- | --- |
 | Customer wants to see landing page when accessing site | load page | landing page loads | Completed |
 | Customer wants to change amount of columns that display products | click button | grid layout changes | In Progress |
-| Customer wants cart functionality | click add to cart | cart updates | In Progress |
+| Customer wants cart functionality | click add to cart | cart updates | Wishlist |
 
 ## Angular Site Structure
 
