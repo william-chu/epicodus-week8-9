@@ -13,7 +13,7 @@
   <div *ngIf="viewFitsBy === 'both'">
     <div class="row">
       <div class="col-12 col-sm-6">
-        <div *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'male'">
+        <div *ngFor="let jeanFit of jeanFitList | async | filterJeanFitGender:'male'">
           <div class="jean-fit">
             <img [src]="jeanFit.imgMain">
             <div class="overlay-right">
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6">
-        <div *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'female'">
+        <div *ngFor="let jeanFit of jeanFitList | async | filterJeanFitGender:'female'">
           <div class="jean-fit">
             <img class="mirror" [src]="jeanFit.imgMain">
             <div class="overlay-left">
@@ -38,7 +38,7 @@
   </div>
   <div *ngIf="viewFitsBy === 'mens'">
     <div class="row">
-      <div class="col-12 col-sm-6" *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'male'">
+      <div class="col-12 col-sm-6" *ngFor="let jeanFit of jeanFitList | async | filterJeanFitGender:'male'">
         <div class="jean-fit">
           <img [src]="jeanFit.imgMain">
           <div class="overlay-right">
@@ -51,7 +51,7 @@
   </div>
   <div *ngIf="viewFitsBy === 'womens'">
     <div class="row">
-      <div class="col-12 col-sm-6" *ngFor="let jeanFit of jeanFitList | filterJeanFitGender:'female'">
+      <div class="col-12 col-sm-6" *ngFor="let jeanFit of jeanFitList | async | filterJeanFitGender:'female'">
         <div class="jean-fit">
           <img class="mirror" [src]="jeanFit.imgMain">
           <div class="overlay-left">

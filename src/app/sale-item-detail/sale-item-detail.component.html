@@ -32,7 +32,7 @@
     <div class="col-md-6 item-detail">
       <h3>{{(saleItemToDisplay | async)?.name}}</h3>
       <p>{{(saleItemToDisplay | async)?.productId}}</p>
-      <strong><p *ngIf="(saleItemToDisplay | async)?.inventory !== 0">$USD {{(saleItemToDisplay| async)?.price}}</p></strong>
+      <strong><p *ngIf="(saleItemToDisplay | async)?.inventory > 0">$USD {{(saleItemToDisplay| async)?.price}}</p></strong>
       <strong><p class="warning" *ngIf="(saleItemToDisplay | async)?.inventory === 0">OUT OF STOCK</p></strong>
       <p>{{(saleItemToDisplay| async)?.description}}</p>
     </div>
