@@ -26,8 +26,8 @@ Screenshot of Actual Site (5/4/18)
 | Wishlist Features | Input | Output | Status |
 | --- | --- | --- | --- |
 | Customer wants to see landing page when accessing site | load page | landing page loads | Completed |
-| Customer wants to change amount of columns that display products | click button | grid layout changes | In Progress |
-| Customer wants cart functionality | click add to cart | cart updates | Wishlist |
+| Customer wants to change amount of columns that display products | click button | grid layout changes | Completed |
+| Customer wants cart functionality | click add to cart | cart updates | In Progress |
 
 ## Angular Site Structure
 

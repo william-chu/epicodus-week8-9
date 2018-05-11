@@ -29,8 +29,8 @@ export class MensSaleComponent implements OnInit {
     if (columns === 3) {
       this.displayColumns = "item-display col-4";
     }
-    else if (columns === 4) {
-      this.displayColumns = "item-display col-3"
+    else if (columns === 2) {
+      this.displayColumns = "item-display col-6"
     }
   }
 
