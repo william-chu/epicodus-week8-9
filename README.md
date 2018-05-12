@@ -37,6 +37,7 @@ Screenshot of Actual Site (5/4/18)
 
 
 ## Setup/Installation Requirements
+* To view project hosted on Firebase, view in browser https://neuw-denim-rebuild.firebaseapp.com/
 * To view project pre-Firebase implementation, view in browser https://william-chu.github.io/epicodus-week8-9/
 * To view project code, clone repository from https://github.com/william-chu/epicodus-week8-9/ and proceed to Node.js Prerequisites and Firebase Setup
 
@@ -75,6 +76,7 @@ Screenshot of Actual Site (5/4/18)
 * To view project in development mode, navigate to project root folder and run `ng serve --open`
 
 ## Known Bugs
+* Console errors on Fits page load, still investigating.
 
 ## Technologies Used
 
