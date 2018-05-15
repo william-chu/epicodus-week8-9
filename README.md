@@ -75,9 +75,6 @@ Screenshot of Actual Site (5/4/18)
 * Browse to the project folder src/app/firebase-data.json file and click Import
 * To view project in development mode, navigate to project root folder and run `ng serve --open`
 
-## Known Bugs
-* Console errors on Fits page load, still investigating.
-
 ## Technologies Used
 
 * CSS _(Bootstrap 4.1)_

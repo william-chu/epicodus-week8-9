@@ -9,7 +9,10 @@ import { JeanFit } from './models/jeanfit.model';
 export class FilterJeanFitGenderPipe implements PipeTransform {
   transform(input: JeanFit[], filterbygender) {
     let output: JeanFit[] = [];
-    if (filterbygender === "male") {
+    if (input === null) {
+      return;
+    }
+    else if (filterbygender === "male") {
       for (let i = 0; i < input.length; i++) {
         if (input[i].gender === "male") {
           output.push(input[i]);
